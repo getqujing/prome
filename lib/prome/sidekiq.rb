@@ -1,6 +1,5 @@
 require 'rack'
 require 'prometheus/client/rack/exporter'
-require 'pry'
 
 module Prome
   module Sidekiq
