@@ -11,7 +11,7 @@ module Prome
               || worker === "ActiveJob::QueueAdapters::SidekiqAdapter::JobWrapper"
             labels[:worker] = job["wrapped"]
           else
-            labels[:worker] = worker.to_s
+            labels[:worker] = worker.class.to_s
           end
           labels
         end
